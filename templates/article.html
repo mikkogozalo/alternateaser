@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+{% block content %}
+          <div class="well">
+          	<h2 class="text-center">{{ article['title'] }}</h2>
+            <ul>
+{% for sentence in article['summary'] %}
+              <li>{{ sentence }}</li>
+{% endfor %}
+            </ul>
+          </div>
+{% include "summarize_form.html" %}
+{% endblock %}
