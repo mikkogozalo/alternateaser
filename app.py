@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for, session, jsonify
 from pymongo import MongoClient
-from pyteaser_custom import pyteaser
+import pyteaser
 import os
 
 app = Flask(__name__)
