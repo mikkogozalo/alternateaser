@@ -36,4 +36,4 @@ def article(slug):
     return render_template('article.html', title=article['title'], article=article)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = True, host='0.0.0.0')
